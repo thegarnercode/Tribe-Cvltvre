@@ -1,0 +1,38 @@
++Products.jsx+
+{products.map((produtcs)=>(
+    <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
+    
+))}
+
+- above is how you map through items
+whenever looking through items
+in jsx the items need to have an id
+
+xs,sm,md & lg are the width the grid is going to take on different devices
+___________________
++Product.jsx+
+product.jsx is a sub-component/child component of Products.jsx
+so in Product.jsx we call our products from Products.jsx
+
+* below you destructure the product from the props using the curly braces
+const Product = ({ product }) => {
+}
+
+in Product.jsx we create our Mocks first , meaning
+we import our card content to display our products
+we will need to import React from React
+import card, card content, card media, card actions, typography, & IconButton
+
+import classes that are coming from styles.js file
+__________________
++Styles.js+
+the only goal of this file is to say export default to export the call to function makeStyles
+function makeStyles takes in 1 parameter and that is yet another callback function inside of there with an instant return 
+with instant returns we wrap it in parenthesis and return an object
+
+inside of object we will write our styles in css/js type of way 
+__________________
+App.js 
+
+
+__________________________
